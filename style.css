@@ -1,11 +1,11 @@
 body {
-  background-color: #ffc457;
+  background-color: brown;
   margin: 0;
   padding: 0;
 }
 
 #title {
-  font-size: 12vmin;
+  font-size: 10vmin;
   text-align: center;
   font-family: 'Annie Use Your Telescope',cursive;
   margin-bottom: 0;
@@ -14,15 +14,11 @@ body {
 }
 
 h3 {
-  font-weight: bold;
   font-size: 3vmin;
   font-family: 'Annie Use Your Telescope', cursive;
 }
 
-h5 {
-  font-size: 2vmin;
-  margin-top: -6px;
-}
+
 
 p {
   margin-top: -6px;
@@ -31,19 +27,22 @@ p {
 
 #mainContatiner {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 8vmin;
   margin-left: 15vmin;
   margin-right: 15vmin;
 }
 
 .newImage {
-  width: 200px;
-  height: 320px;
+  width: 360px;
+  height: 420px;
 }
 
 .contentItem {
-  display: flex;
+  background-color:white;
+  grind-column-end: span 2;
+  border-radius: : 30px
+  display: justify content;
   align-items: center;
   flex-direction: column;
 }
@@ -64,4 +63,29 @@ p {
   0%{opacity:0;}
   50%{opacity:1;}
   100%{opacity:0;}
+}
+@media only screen and (max-width: 500px){
+  body{
+
+    background-color: brown;
+    padding 5vw;
+  }
+
+  img {
+      width: 100%;
+
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  h1{
+    font-size: 60px;
+
+  }
+
+  img {
+      width: 100%;
+
+  }
+
 }
